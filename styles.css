@@ -1,0 +1,112 @@
+/* Stili Generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px;
+    background-color: #fde2e4;
+}
+
+.navbar-brand img {
+    max-height: 60px;
+}
+
+.navbar-nav {
+    background-color: #fde2e4;
+}
+
+.navbar-toggler {
+    background-color: #fde2e4;
+}
+
+.text-color {
+    color:#972a32;
+}
+
+/* Home Section */
+.home-section {
+    height: 90vh;
+    background: url('images/home.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Sezioni con alternanza di colori */
+.section-light {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.section-pink {
+    background-color: #fde2e4;
+    padding: 80px 0;
+}
+
+/* Pulsanti */
+.btn-primary {
+    background: #d63384;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #b02a74;
+    transform: scale(1.05);
+}
+
+/* Servizi */
+.service-item {
+    transition: all 0.3s;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+}
+
+.btn-light-pink {
+    background: #fde2e4;
+    color: #333;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.btn-light-pink:hover {
+    background: #f9c6cc;
+    transform: scale(1.05);
+}
