@@ -77,21 +77,10 @@ h1, h2 {
 
 
 .service-item {
-    width: 250px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+    transition: all 0.3s;
+    border-radius: 15px;
     overflow: hidden;
     background-color: #fde2e4 !important;
-
-}
-.service-item img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
 }
 
 .service-item:hover {
