@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIKI Beauty Lab</title>
+    <title>Beauty Lab</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <script defer src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"> <img src="images/logo1.png" alt="NIKI Beauty Lab"> </a>
+            <a class="navbar-brand" href="#"> <img src="images/logo.png" alt="Beauty Lab"> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,28 +26,30 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Chi siamo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Servizi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#listino">Listino Prezzi</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimonials">Recensioni</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contatti</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
     <section id="home" class="home-section">
         <div>
             <h1 class="display-3 text-color">Eleganza e Benessere</h1>
             <p class="lead text-color">Trattamenti estetici per esaltare la tua bellezza</p>
-            <button class="btn-light-pink" onclick="location.href='#services'">Scopri i servizi</button>
-         </div>
+            <button class="btn-light-pink" onclick="location.href='#listino'">Scopri i servizi</button>
+        </div>
     </section>
-    
+
     <section id="about" class="section-light text-center">
         <h2 class="text-color">Chi siamo</h2>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="lead text-color">NIKI Beauty Lab offre trattamenti di bellezza esclusivi, dedicati al tuo benessere e alla tua pelle. Con anni di esperienza nel settore, la nostra missione è offrirti un’esperienza di relax e cura personalizzata.</p>
+                    <p class="lead text-color">Beauty Lab offre trattamenti di bellezza esclusivi, dedicati al tuo
+                        benessere e alla tua pelle. Con anni di esperienza nel settore, la nostra missione è offrirti
+                        un’esperienza di relax e cura personalizzata.</p>
                 </div>
                 <div class="col-md-6">
                     <img src="images/about.jpg" class="img-fluid rounded" alt="Foto della proprietaria">
@@ -51,70 +57,202 @@
             </div>
         </div>
     </section>
-    
-    <section id="services" class="section-pink">
-        <div class="container text-center">
-            <h2 class="text-color">I nostri servizi</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card shadow-sm service-item  overflow-hidden">
-                        <img src="images/manicure.jpg" class="card-img-top" alt="Unghie">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-color">Manicure e Unghie</h5>
-                        </div>
-                    </div>
+
+    <section id="listino" class="section-light text-center">
+        <div class="container">
+            <h2 class="text-color">Listino Prezzi</h2>
+
+            <!-- Navigazione tra le categorie -->
+            <ul class="nav nav-pills justify-content-center my-4"
+                style="background-color: #fde2e4; padding: 10px; border-radius: 10px;">
+                <li class="nav-item text-color"><a class="nav-link active text-color" data-bs-toggle="pill" role="tab"
+                        aria-controls="manicure" href="#manicure">Manicure & Pedicure</a></li>
+                <li class="nav-item text-color"><a class="nav-link text-color" data-bs-toggle="pill" role="tab"
+                        aria-controls="ciglia" href="#ciglia">Ciglia & Sopracciglia</a></li>
+                <li class="nav-item text-color"><a class="nav-link text-color" data-bs-toggle="pill" role="tab"
+                        aria-controls="viso" href="#viso">Viso</a></li>
+                <li class="nav-item text-color"><a class="nav-link text-color" data-bs-toggle="pill" role="tab"
+                        aria-controls="corpo" href="#corpo">Corpo</a></li>
+                <li class="nav-item text-color"><a class="nav-link text-color" data-bs-toggle="pill" role="tab"
+                        aria-controls="massaggi" href="#massaggi">Massaggi</a></li>
+                <li class="nav-item text-color"><a class="nav-link text-color" data-bs-toggle="pill" role="tab"
+                        aria-controls="epilazione" href="#epilazione">Epilazione</a></li>
+            </ul>
+
+            <div class="tab-content text-center">
+                <!-- Manicure & Pedicure -->
+                <div id="manicure" class="tab-pane fade show active" role="tabpanel">
+                    <h3 class="text-color text-center"style="margin-right: 15%;">Manicure & Pedicure</h3>
+                    <table class="table table-striped text-center">
+                        <tr>
+                            <td>Riparazione unghia</td>
+                            <td>5 €</td>
+                        </tr>
+                        <tr>
+                            <td>Manicure</td>
+                            <td>16 €</td>
+                        </tr>
+                        <tr>
+                            <td>Semipermanente con dry manicure</td>
+                            <td>35 €</td>
+                        </tr>
+                        <tr>
+                            <td>Ricostruzione in gel</td>
+                            <td>65 €</td>
+                        </tr>
+                        <tr>
+                            <td>Pedicure estetico</td>
+                            <td>28 €</td>
+                        </tr>
+                        <tr>
+                            <td>Pedicure completo</td>
+                            <td>32 €</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="col-md-4">
-                    <div class="card shadow-sm service-item  overflow-hidden">
-                        <img src="images/massaggio.jpg" class="card-img-top" alt="Massaggi">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-color">Massaggi Rilassanti</h5>
-                        </div>
-                    </div>
+
+                <!-- Ciglia & Sopracciglia -->
+                <div id="ciglia" class="tab-pane fade" role="tabpanel">
+                    <h3 class="text-color text-center"style="margin-right: 20%;">Ciglia & Sopracciglia</h3>
+                    <table class="table table-striped text-center">
+                        <tr>
+                            <td>Laminazione ciglia</td>
+                            <td>60 €</td>
+                        </tr>
+                        <tr>
+                            <td>Laminazione sopracciglia</td>
+                            <td>30 €</td>
+                        </tr>
+                        <tr>
+                            <td>Sopracciglia con pinzetta</td>
+                            <td>10 €</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="col-md-4">
-                    <div class="card shadow-sm service-item overflow-hidden">
-                        <img src="images/ceretta.jpg" class="card-img-top" alt="Ceretta">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-color">Ceretta Professionale</h5>
-                        </div>
-                    </div>
+
+                <!-- Viso -->
+                <div id="viso" class="tab-pane fade" role="tabpanel">
+                    <h3 class="text-color text-center"style="margin-right: 25%;">Viso</h3>
+                    <table class="table table-striped text-center">
+                        <tr>
+                            <td>Pulizia viso</td>
+                            <td>45 €</td>
+                        </tr>
+                        <tr>
+                            <td>Trattamento viso personalizzato</td>
+                            <td>da 40 €</td>
+                        </tr>
+                    </table>
                 </div>
+
+                <!-- Corpo -->
+                <div id="corpo" class="tab-pane fade" role="tabpanel">
+                    <h3 class="text-color text-center"style="margin-right: 25%;">Corpo</h3>
+                    <table class="table table-striped text-center">
+                        <tr>
+                            <td>Fango</td>
+                            <td>30 €</td>
+                        </tr>
+                        <tr>
+                            <td>Pressoterapia 30'</td>
+                            <td>30 €</td>
+                        </tr>
+                        <tr>
+                            <td>Pressoterapia 45'</td>
+                            <td>40 €</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Massaggi -->
+                <div id="massaggi" class="tab-pane fade" role="tabpanel">
+                    <h3 class="text-color text-center"style="margin-right: 25%;">Massaggi</h3>
+                    <table class="table table-striped text-center">
+                        <tr>
+                            <td>Massaggio rilassante 30'</td>
+                            <td>30 €</td>
+                        </tr>
+                        <tr>
+                            <td>Massaggio rilassante 50'</td>
+                            <td>50 €</td>
+                        </tr>
+                        <tr>
+                            <td>Massaggio drenante</td>
+                            <td>35 €</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Epilazione -->
+                <div id="epilazione" class="tab-pane fade" role="tabpanel">
+                    <h3 class="text-color text-center"style="margin-right: 25%;">Epilazione con Cera</h3>
+                    <table class="table table-striped text-center">
+                        <tr>
+                            <td>Sopracciglia</td>
+                            <td>8 €</td>
+                        </tr>
+                        <tr>
+                            <td>Labbro superiore</td>
+                            <td>4 €</td>
+                        </tr>
+                        <tr>
+                            <td>Ascelle</td>
+                            <td>10 €</td>
+                        </tr>
+                        <tr>
+                            <td>Gamba intera</td>
+                            <td>30 €</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Nota sulla consulenza -->
+            <div class="alert alert-info mt-4" style="background-color: #fde2e4; color: #972a32;">
+                <strong>N.B.:</strong> La consulenza nei percorsi personalizzati viso e corpo è indispensabile per la
+                valutazione del trattamento più indicato. L'importo versato verrà utilizzato come acconto per il
+                percorso acquistato e detratto dal costo finale. Nel caso in cui non si acquistasse alcun trattamento,
+                l'importo sarà reso sotto forma di voucher utilizzabile per altri servizi.
             </div>
         </div>
     </section>
+
+
 
     <section id="contact" class="container py-5 text-center">
         <h2>Contattaci</h2>
         <p>Scrivici su WhatsApp o seguici sui social!</p>
         <div class="d-flex justify-content-center gap-3">
-            <a href="https://wa.me/tuonumero" target="_blank" class="btn btn-success"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="https://instagram.com/tuoprofilo" target="_blank" class="btn btn-danger"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://facebook.com/tuoprofilo" target="_blank" class="btn btn-primary"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://wa.me/tuonumero" target="_blank" class="btn btn-success"><i class="fab fa-whatsapp"></i>
+                WhatsApp</a>
+            <a href="https://instagram.com/tuoprofilo" target="_blank" class="btn btn-danger"><i
+                    class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://facebook.com/tuoprofilo" target="_blank" class="btn btn-primary"><i
+                    class="fab fa-facebook"></i> Facebook</a>
         </div>
     </section>
-    
+
     <footer>
-        <p class="text-center">&copy; 2025 NIKI Beauty Lab | Realizzato con ❤️</p>
+        <p class="text-center">&copy; 2025 Beauty Lab | Realizzato con ❤️</p>
     </footer>
 
     <script>
-        document.addEventListener("click", function(event) {
+        document.addEventListener("click", function (event) {
             let navbarToggler = document.querySelector(".navbar-toggler");
             let navbarCollapse = document.querySelector(".navbar-collapse");
             let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-            
+
             if (!navbarToggler.contains(event.target) && !navbarCollapse.contains(event.target)) {
                 navbarCollapse.classList.remove("show");
             }
-            
+
             navLinks.forEach(link => {
-                link.addEventListener("click", function() {
+                link.addEventListener("click", function () {
                     navbarCollapse.classList.remove("show");
                 });
             });
         });
     </script>
-    
+
 </body>
+
 </html>
